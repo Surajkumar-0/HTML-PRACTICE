@@ -703,5 +703,170 @@ HTML Forms are used to collect and submit user data. Important form elements inc
 Forms are one of the most important features of modern web development.
 
 
+# 08. Inline and Block Elements in HTML
+
+## Introduction
+
+HTML elements are mainly classified into two categories:
+
+* Block Elements
+* Inline Elements
+
+Understanding the difference between block and inline elements is essential for designing web pages and learning CSS.
+
+---
+
+# Block Elements
+
+## Definition
+
+A block element always starts on a new line and occupies the full width available by default.
+
+## Characteristics
+
+* Starts on a new line.
+* Takes the full available width.
+* Width and height can be modified using CSS.
+* Other elements appear below it.
+
+## Common Block Elements
+
+* `<div>`
+* `<p>`
+* `<h1>` to `<h6>`
+* `<form>`
+* `<table>`
+* `<section>`
+* `<article>`
+* `<header>`
+* `<footer>`
+* `<nav>`
+* `<main>`
+* `<ul>`
+* `<ol>`
+* `<li>`
+
+## Example
+
+```html
+<h1>Welcome</h1>
+
+<p>This is my first paragraph.</p>
+
+<div>This is a div element.</div>
+```
+
+---
+
+# Inline Elements
+
+## Definition
+
+An inline element does not start on a new line. It only occupies the width required by its content.
+
+## Characteristics
+
+* Does not start on a new line.
+* Takes only the required width.
+* Multiple inline elements can appear on the same line.
+* Mainly used for formatting text and small content.
+
+## Common Inline Elements
+
+* `<span>`
+* `<a>`
+* `<img>`
+* `<b>`
+* `<strong>`
+* `<i>`
+* `<em>`
+* `<u>`
+* `<mark>`
+* `<small>`
+* `<sup>`
+* `<sub>`
+* `<label>`
+
+## Example
+
+```html
+I am learning <b>HTML</b> and <i>CSS</i>.
+```
+
+---
+
+# Difference Between Block and Inline Elements
+
+| Block Elements                            | Inline Elements                  |
+| ----------------------------------------- | -------------------------------- |
+| Start on a new line                       | Do not start on a new line       |
+| Occupy the full available width           | Occupy only the required width   |
+| Used for large sections of a webpage      | Used for small pieces of content |
+| Width and height can be easily controlled | Width depends on content         |
+| Examples: `div`, `p`, `h1`                | Examples: `span`, `a`, `b`       |
+
+---
+
+# div Element
+
+The `<div>` element is a block-level container used to group large sections of HTML content. It is widely used for page layout and styling with CSS.
+
+## Example
+
+```html
+<div>
+    <h2>About Me</h2>
+    <p>I am learning HTML.</p>
+</div>
+```
+
+---
+
+# span Element
+
+The `<span>` element is an inline container used to style or group a small portion of text without creating a new line.
+
+## Example
+
+```html
+<p>My favorite language is <span>HTML</span>.</p>
+```
+
+---
+
+# Key Points
+
+* Block elements begin on a new line.
+* Inline elements remain on the same line.
+* `<div>` is the most commonly used block element.
+* `<span>` is the most commonly used inline element.
+* This concept is important before learning CSS because CSS uses `display: block`, `display: inline`, and `display: inline-block`.
+
+---
+
+# Interview Questions
+
+### 1. What is a block element?
+
+A block element starts on a new line and occupies the full available width by default.
+
+### 2. What is an inline element?
+
+An inline element does not start on a new line and occupies only the width required by its content.
+
+### 3. What is the difference between `<div>` and `<span>`?
+
+* `<div>` is a block-level container.
+* `<span>` is an inline-level container.
+
+---
+
+# Summary
+
+* HTML elements are divided into block and inline elements.
+* Block elements are used for page structure and layout.
+* Inline elements are used for formatting text and small content.
+* Understanding block and inline elements is important for building responsive web pages and learning CSS.
+
 
 🚀 This repository documents my HTML learning journey and practice.
