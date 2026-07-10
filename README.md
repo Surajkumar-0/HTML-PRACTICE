@@ -343,4 +343,365 @@ Less than 0.1
 
 ---
 
+
+# 07. HTML Forms and Input Tags
+
+## Introduction
+
+HTML Forms are used to collect data from users. Forms are commonly used for login pages, registration forms, contact forms, surveys, feedback forms, and online applications.
+
+The `<form>` element acts as a container that holds different form controls such as text fields, radio buttons, checkboxes, dropdown lists, and buttons.
+
+---
+
+# Form Tag
+
+The `<form>` tag is used to create a form.
+
+```html
+<form action="" method="post">
+</form>
+```
+
+## Form Attributes
+
+### action
+
+Specifies the location where form data will be sent after submission.
+
+```html
+<form action="submit.php">
+```
+
+### method
+
+Specifies how form data will be transmitted.
+
+```html
+method="get"
+```
+
+or
+
+```html
+method="post"
+```
+
+---
+
+# Input Element
+
+The `<input>` element is used to accept user input.
+
+```html
+<input type="text">
+```
+
+Input is an empty element and does not require a closing tag.
+
+---
+
+# Common Input Types
+
+## Text Input
+
+Used to enter text such as names and usernames.
+
+```html
+<input type="text">
+```
+
+---
+
+## Password Input
+
+Used to enter passwords. Characters are hidden for security.
+
+```html
+<input type="password">
+```
+
+---
+
+## Email Input
+
+Used to enter email addresses.
+
+```html
+<input type="email">
+```
+
+The browser validates the email format automatically.
+
+---
+
+## Number Input
+
+Used to enter numeric values.
+
+```html
+<input type="number">
+```
+
+---
+
+## Date Input
+
+Used to select dates from a calendar.
+
+```html
+<input type="date">
+```
+
+---
+
+## Radio Button
+
+Used when only one option can be selected from a group.
+
+```html
+<input type="radio" name="gender" value="male">
+<input type="radio" name="gender" value="female">
+```
+
+### Important Note
+
+Radio buttons must have the same `name` attribute to work as a group.
+
+---
+
+## Checkbox
+
+Used when multiple options can be selected.
+
+```html
+<input type="checkbox" name="hobby" value="cricket">
+```
+
+---
+
+## File Input
+
+Used to upload files.
+
+```html
+<input type="file">
+```
+
+---
+
+## Submit Button
+
+Used to submit form data.
+
+```html
+<input type="submit" value="Submit">
+```
+
+---
+
+## Reset Button
+
+Used to clear all form fields.
+
+```html
+<input type="reset" value="Reset">
+```
+
+---
+
+# Label Element
+
+The `<label>` element provides a description for an input field.
+
+```html
+<label for="username">Username</label>
+<input type="text" id="username">
+```
+
+## Benefits
+
+* Improves accessibility.
+* Clicking the label focuses the related input field.
+* Makes forms more user-friendly.
+
+---
+
+# Important Input Attributes
+
+## id
+
+Provides a unique identifier for an element.
+
+```html
+<input type="text" id="username">
+```
+
+---
+
+## name
+
+Defines the name of the data sent to the server.
+
+```html
+<input type="text" name="username">
+```
+
+Example:
+
+```
+username = Suraj
+```
+
+---
+
+## value
+
+Specifies the value submitted with the form.
+
+```html
+<input type="radio" value="male">
+```
+
+---
+
+## placeholder
+
+Displays a hint inside the input field.
+
+```html
+<input type="text" placeholder="Enter your name">
+```
+
+---
+
+## autofocus
+
+Automatically places the cursor inside the field when the page loads.
+
+```html
+<input type="text" autofocus>
+```
+
+---
+
+## required
+
+Makes a field mandatory.
+
+```html
+<input type="email" required>
+```
+
+The form cannot be submitted if the field is empty.
+
+---
+
+# Textarea Element
+
+The `<textarea>` element is used for multi-line text input.
+
+```html
+<textarea rows="4" cols="50"></textarea>
+```
+
+## Attributes
+
+### rows
+
+Defines the height of the textarea.
+
+```html
+rows="4"
+```
+
+### cols
+
+Defines the width of the textarea.
+
+```html
+cols="50"
+```
+
+---
+
+# Select and Option Elements
+
+Used to create a dropdown list.
+
+```html
+<select name="fruits">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+</select>
+```
+
+## select
+
+Creates a dropdown menu.
+
+## option
+
+Defines items inside the dropdown.
+
+---
+
+# Data Submission Example
+
+If a user enters:
+
+```
+Username : Suraj
+Gender : Male
+Comment : Learning HTML
+Fruit : Banana
+```
+
+The server may receive:
+
+```
+username = Suraj
+gender = male
+comment = Learning HTML
+fruits = banana
+```
+
+---
+
+# Difference Between id and name
+
+| id                          | name                            |
+| --------------------------- | ------------------------------- |
+| Must be unique              | Can be reused                   |
+| Used by CSS and JavaScript  | Used to send data to the server |
+| Connects labels with inputs | Identifies form data            |
+
+---
+
+# Advantages of HTML Forms
+
+* Collect user information.
+* Enable user interaction.
+* Used in login and registration systems.
+* Support data validation.
+* Essential for web applications.
+
+---
+
+# Conclusion
+
+HTML Forms are used to collect and submit user data. Important form elements include:
+
+* form
+* input
+* label
+* textarea
+* select
+* option
+* button
+
+Forms are one of the most important features of modern web development.
+
+
+
 🚀 This repository documents my HTML learning journey and practice.
