@@ -869,4 +869,188 @@ An inline element does not start on a new line and occupies only the width requi
 * Understanding block and inline elements is important for building responsive web pages and learning CSS.
 
 
+# 09. ID and Classes in HTML
+
+## Introduction
+
+In HTML, **id** and **class** attributes are used to identify and group elements. They are mainly used for applying CSS styles and selecting elements with JavaScript.
+
+---
+
+# ID Attribute
+
+## Definition
+
+The **id** attribute provides a **unique identifier** for an HTML element. An id value must be unique within a single HTML document.
+
+## Syntax
+
+```html
+<p id="intro">Welcome to HTML</p>
+```
+
+## Example
+
+```html
+<h1 id="title">HTML Tutorial</h1>
+
+<p id="description">
+Learn HTML from beginner to advanced.
+</p>
+```
+
+## Characteristics
+
+* Must be unique on a webpage.
+* Used to identify a specific element.
+* Commonly used with CSS and JavaScript.
+* One element can have only one id.
+
+---
+
+# Class Attribute
+
+## Definition
+
+The **class** attribute is used to group multiple HTML elements under the same name. Multiple elements can share the same class.
+
+## Syntax
+
+```html
+<p class="text">Paragraph One</p>
+<p class="text">Paragraph Two</p>
+```
+
+## Example
+
+```html
+<h2 class="heading">HTML</h2>
+
+<p class="heading">
+Learning HTML is fun.
+</p>
+```
+
+## Characteristics
+
+* A class can be used by multiple elements.
+* Mainly used for applying the same CSS style to different elements.
+* JavaScript can also access elements using class names.
+* An element can have multiple classes.
+
+Example:
+
+```html
+<div class="box container"></div>
+```
+
+---
+
+# Difference Between ID and Class
+
+| ID                            | Class                                           |
+| ----------------------------- | ----------------------------------------------- |
+| Must be unique                | Can be reused                                   |
+| Used for one specific element | Used for multiple elements                      |
+| One id per element            | Multiple classes can be assigned to one element |
+| CSS Selector: `#id`           | CSS Selector: `.class`                          |
+
+---
+
+# CSS Example
+
+```html
+<h1 id="title">Welcome</h1>
+
+<p class="text">HTML Basics</p>
+
+<p class="text">CSS Basics</p>
+```
+
+```css
+#title{
+    color: blue;
+}
+
+.text{
+    color: green;
+}
+```
+
+---
+
+# JavaScript Example
+
+Accessing an element by **id**:
+
+```javascript
+document.getElementById("title");
+```
+
+Accessing elements by **class**:
+
+```javascript
+document.getElementsByClassName("text");
+```
+
+---
+
+# Best Practices
+
+* Use **id** when you need to identify one unique element.
+* Use **class** when multiple elements share the same style or behavior.
+* Give meaningful names such as `header`, `navbar`, `btn`, `container`, or `card`.
+* Avoid using spaces in id names.
+* Follow consistent naming conventions.
+
+---
+
+# Key Points
+
+* `id` identifies a single unique element.
+* `class` groups multiple elements together.
+* Both attributes are widely used in CSS and JavaScript.
+* An element can have only one id but multiple classes.
+
+---
+
+# Interview Questions
+
+### 1. What is the purpose of the id attribute?
+
+The **id** attribute uniquely identifies an HTML element on a webpage.
+
+### 2. What is the purpose of the class attribute?
+
+The **class** attribute groups multiple elements so they can share the same CSS styles or JavaScript behavior.
+
+### 3. Can two elements have the same id?
+
+No. An id must be unique within an HTML document.
+
+### 4. Can multiple elements have the same class?
+
+Yes. Multiple elements can share the same class name.
+
+### 5. Can an element have multiple classes?
+
+Yes.
+
+Example:
+
+```html
+<div class="container shadow rounded"></div>
+```
+
+---
+
+# Summary
+
+* **id** is used to uniquely identify a single HTML element.
+* **class** is used to group multiple elements.
+* CSS uses `#` to select an id and `.` to select a class.
+* JavaScript can access elements using both id and class.
+* Understanding id and class is essential for learning CSS and JavaScript.
+
+
 🚀 This repository documents my HTML learning journey and practice.
