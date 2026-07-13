@@ -1053,4 +1053,501 @@ Example:
 * Understanding id and class is essential for learning CSS and JavaScript.
 
 
+# 10. Video, Audio and Media in HTML
+
+## Introduction
+
+HTML5 provides built-in support for multimedia content such as audio and video. Before HTML5, developers had to rely on external plugins like Flash Player to play media files. Today, HTML offers native media elements that work directly in modern web browsers.
+
+The main multimedia elements are:
+
+* `<audio>`
+* `<video>`
+* `<source>`
+
+---
+
+# Audio Element
+
+## Definition
+
+The `<audio>` element is used to embed and play audio files on a webpage.
+
+## Syntax
+
+```html
+<audio src="song.mp3" controls></audio>
+```
+
+## Example
+
+```html
+<audio src="song.mp3" controls></audio>
+```
+
+## Common Audio Attributes
+
+### src
+
+Specifies the location of the audio file.
+
+```html
+<audio src="song.mp3"></audio>
+```
+
+### controls
+
+Displays the browser's default audio controls such as Play, Pause, Volume, and Progress Bar.
+
+```html
+<audio src="song.mp3" controls></audio>
+```
+
+### autoplay
+
+Automatically starts playing the audio when the webpage loads.
+
+```html
+<audio src="song.mp3" autoplay controls></audio>
+```
+
+> Note: Most modern browsers restrict autoplay unless certain conditions are met.
+
+### loop
+
+Repeats the audio continuously.
+
+```html
+<audio src="song.mp3" controls loop></audio>
+```
+
+### muted
+
+Starts the audio with the sound muted.
+
+```html
+<audio src="song.mp3" controls muted></audio>
+```
+
+---
+
+# Video Element
+
+## Definition
+
+The `<video>` element is used to embed and play video files on a webpage.
+
+## Syntax
+
+```html
+<video src="video.mp4" controls></video>
+```
+
+## Example
+
+```html
+<video src="video.mp4" controls width="600"></video>
+```
+
+---
+
+# Common Video Attributes
+
+### src
+
+Specifies the location of the video file.
+
+### controls
+
+Displays video controls such as Play, Pause, Volume, and Full Screen.
+
+### width
+
+Sets the width of the video.
+
+```html
+<video src="video.mp4" width="600" controls></video>
+```
+
+### height
+
+Sets the height of the video.
+
+```html
+<video src="video.mp4" height="400" controls></video>
+```
+
+### poster
+
+Displays an image before the video starts playing.
+
+```html
+<video
+    src="video.mp4"
+    poster="thumbnail.jpg"
+    controls>
+</video>
+```
+
+### autoplay
+
+Starts the video automatically.
+
+### loop
+
+Repeats the video after it finishes.
+
+### muted
+
+Starts the video without sound.
+
+---
+
+# Source Element
+
+## Definition
+
+The `<source>` element is used inside the `<audio>` or `<video>` element to provide multiple media files in different formats.
+
+This helps browsers choose a supported media format.
+
+## Video Example
+
+```html
+<video controls width="600">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    Your browser does not support the video tag.
+</video>
+```
+
+## Audio Example
+
+```html
+<audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+    <source src="song.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+```
+
+---
+
+# Supported Media Formats
+
+## Audio Formats
+
+* MP3
+* OGG
+* WAV
+
+## Video Formats
+
+* MP4
+* WebM
+* OGG
+
+---
+
+# Advantages of HTML5 Media
+
+* No external plugins are required.
+* Supported by all modern browsers.
+* Easy to embed audio and video.
+* Built-in media controls.
+* Better performance and user experience.
+
+---
+
+# Important Attributes Summary
+
+| Attribute  | Description                                   |
+| ---------- | --------------------------------------------- |
+| `src`      | Specifies the media file location             |
+| `controls` | Displays built-in media controls              |
+| `autoplay` | Starts media automatically                    |
+| `loop`     | Repeats the media continuously                |
+| `muted`    | Starts media without sound                    |
+| `width`    | Sets video width                              |
+| `height`   | Sets video height                             |
+| `poster`   | Displays a thumbnail before playing the video |
+
+---
+
+# Interview Questions
+
+### 1. Which HTML tag is used to play audio?
+
+**Answer:** `<audio>`
+
+### 2. Which HTML tag is used to play video?
+
+**Answer:** `<video>`
+
+### 3. What is the purpose of the `controls` attribute?
+
+It displays the default browser controls for playing, pausing, adjusting volume, and navigating media.
+
+### 4. What is the purpose of the `poster` attribute?
+
+It displays a thumbnail image before the video starts playing.
+
+### 5. Why is the `<source>` tag used?
+
+The `<source>` tag allows multiple media formats to be provided so that the browser can choose a supported file.
+
+---
+
+# Key Points
+
+* HTML5 supports multimedia using the `<audio>` and `<video>` elements.
+* The `controls` attribute is commonly used to display media controls.
+* The `poster` attribute is used only with videos.
+* The `<source>` element improves browser compatibility.
+* HTML5 media elements eliminate the need for external plugins.
+
+---
+
+# Summary
+
+HTML5 provides built-in support for multimedia content through the `<audio>`, `<video>`, and `<source>` elements. These elements make it easy to embed and play audio and video files while providing features such as playback controls, looping, autoplay, muted playback, and multiple file format support.
+
+
+# 11. Semantic Tags in HTML
+
+## Introduction
+
+Semantic HTML uses elements that clearly describe the purpose and meaning of the content they contain. Unlike non-semantic elements such as `<div>` and `<span>`, semantic elements make the structure of a webpage easier to understand for developers, browsers, search engines, and assistive technologies.
+
+HTML5 introduced several semantic elements to improve code readability, accessibility, and SEO.
+
+---
+
+# What are Semantic Tags?
+
+Semantic tags are HTML elements that clearly define the meaning and purpose of their content.
+
+## Example
+
+```html
+<header>
+    <h1>My Website</h1>
+</header>
+```
+
+The `<header>` element clearly indicates that it represents the header section of a webpage.
+
+---
+
+# Common Semantic Elements
+
+## `<header>`
+
+Represents the introductory section of a webpage or a section. It usually contains the website logo, title, navigation links, or search bar.
+
+### Example
+
+```html
+<header>
+    <h1>My Portfolio</h1>
+</header>
+```
+
+---
+
+## `<nav>`
+
+Defines a navigation section that contains links to different pages or sections of a website.
+
+### Example
+
+```html
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+```
+
+---
+
+## `<main>`
+
+Represents the main content of a webpage. There should generally be only one `<main>` element on a page.
+
+### Example
+
+```html
+<main>
+    <h2>Welcome to My Website</h2>
+</main>
+```
+
+---
+
+## `<section>`
+
+Represents a thematic section of related content.
+
+### Example
+
+```html
+<section>
+    <h2>About Us</h2>
+    <p>We provide web development courses.</p>
+</section>
+```
+
+---
+
+## `<article>`
+
+Represents self-contained content that can be independently distributed or reused, such as blog posts, news articles, or forum posts.
+
+### Example
+
+```html
+<article>
+    <h2>Introduction to HTML</h2>
+    <p>HTML is the standard markup language for web pages.</p>
+</article>
+```
+
+---
+
+## `<aside>`
+
+Represents content that is indirectly related to the main content, such as sidebars, advertisements, recent posts, or additional links.
+
+### Example
+
+```html
+<aside>
+    <h3>Recent Posts</h3>
+</aside>
+```
+
+---
+
+## `<footer>`
+
+Represents the footer section of a webpage or a section. It commonly contains copyright information, contact details, social media links, or legal information.
+
+### Example
+
+```html
+<footer>
+    <p>&copy; 2026 Suraj Kumar</p>
+</footer>
+```
+
+---
+
+# Semantic Page Structure
+
+```html
+<header>
+</header>
+
+<nav>
+</nav>
+
+<main>
+
+    <section>
+    </section>
+
+    <article>
+    </article>
+
+    <aside>
+    </aside>
+
+</main>
+
+<footer>
+</footer>
+```
+
+---
+
+# Advantages of Semantic HTML
+
+* Improves code readability.
+* Enhances Search Engine Optimization (SEO).
+* Improves website accessibility for screen readers.
+* Makes code easier to maintain.
+* Helps browsers understand the structure of a webpage.
+* Provides meaningful page organization.
+
+---
+
+# Semantic vs Non-Semantic Elements
+
+| Semantic Elements                          | Non-Semantic Elements          |
+| ------------------------------------------ | ------------------------------ |
+| Have meaningful names                      | Do not describe content        |
+| Improve SEO                                | Do not improve SEO directly    |
+| Improve accessibility                      | Limited accessibility benefits |
+| Easy to understand                         | Generic containers             |
+| Examples: `<header>`, `<main>`, `<footer>` | Examples: `<div>`, `<span>`    |
+
+---
+
+# Best Practices
+
+* Use semantic elements whenever possible.
+* Use `<header>` for introductory content.
+* Use `<nav>` for navigation links.
+* Keep only one `<main>` element per webpage.
+* Use `<article>` for independent content.
+* Use `<section>` to group related content.
+* Use `<aside>` for side content.
+* Use `<footer>` for footer information.
+
+---
+
+# Interview Questions
+
+### 1. What are semantic tags?
+
+Semantic tags are HTML elements that clearly describe the meaning and purpose of their content.
+
+### 2. Why are semantic tags important?
+
+They improve SEO, accessibility, code readability, and webpage structure.
+
+### 3. Give examples of semantic HTML elements.
+
+* `<header>`
+* `<nav>`
+* `<main>`
+* `<section>`
+* `<article>`
+* `<aside>`
+* `<footer>`
+
+### 4. What is the difference between `<div>` and `<section>`?
+
+* `<div>` is a non-semantic container used for grouping elements.
+* `<section>` is a semantic element used to group related content with a meaningful purpose.
+
+---
+
+# Key Points
+
+* Semantic HTML provides meaningful structure to web pages.
+* HTML5 introduced several semantic elements.
+* Semantic elements improve SEO and accessibility.
+* They make the code cleaner and easier to maintain.
+* Semantic HTML is considered a best practice in modern web development.
+
+---
+
+# Summary
+
+Semantic HTML elements describe the purpose of different sections of a webpage. They help developers write cleaner code, improve accessibility, and allow search engines to better understand webpage content. Using semantic elements is a recommended practice for building modern, well-structured websites.
+
+
+
 🚀 This repository documents my HTML learning journey and practice.
