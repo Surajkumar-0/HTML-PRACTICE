@@ -1549,5 +1549,273 @@ They improve SEO, accessibility, code readability, and webpage structure.
 Semantic HTML elements describe the purpose of different sections of a webpage. They help developers write cleaner code, improve accessibility, and allow search engines to better understand webpage content. Using semantic elements is a recommended practice for building modern, well-structured websites.
 
 
+# 12. HTML Entities, Code Tag and Other Useful Elements
+
+## Introduction
+
+HTML provides several special elements and entities that help developers display reserved characters, format code snippets, preserve whitespace, display quotations, abbreviations, contact information, and date/time values.
+
+These elements improve readability, accessibility, and documentation quality.
+
+---
+
+# HTML Entities
+
+## Definition
+
+HTML entities are special character codes used to display reserved or special characters that cannot be typed directly in HTML.
+
+An HTML entity always starts with `&` and ends with `;`.
+
+## Syntax
+
+```html
+&entity_name;
+```
+
+or
+
+```html
+&#entity_number;
+```
+
+---
+
+# Common HTML Entities
+
+| Entity    | Output | Description          |
+| --------- | ------ | -------------------- |
+| `&lt;`    | `<`    | Less Than            |
+| `&gt;`    | `>`    | Greater Than         |
+| `&amp;`   | `&`    | Ampersand            |
+| `&copy;`  | ©      | Copyright Symbol     |
+| `&reg;`   | ®      | Registered Trademark |
+| `&trade;` | ™      | Trademark Symbol     |
+| `&nbsp;`  | Space  | Non-Breaking Space   |
+
+## Example
+
+```html
+<p>5 &lt; 10</p>
+
+<p>Suraj &amp; Rahul</p>
+
+<p>&copy; 2026</p>
+```
+
+---
+
+# Code Element
+
+## Definition
+
+The `<code>` element is used to display programming code or computer-related text.
+
+## Syntax
+
+```html
+<code>
+printf("Hello World");
+</code>
+```
+
+## Example
+
+```html
+<p>Example:</p>
+
+<code>
+console.log("Hello World");
+</code>
+```
+
+---
+
+# Preformatted Text
+
+## Definition
+
+The `<pre>` element displays text exactly as written, preserving spaces, tabs, and line breaks.
+
+## Example
+
+```html
+<pre>
+Line One
+
+Line Two
+
+Line Three
+</pre>
+```
+
+### Common Usage
+
+The `<pre>` element is often combined with the `<code>` element to display formatted source code.
+
+```html
+<pre>
+<code>
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello");
+}
+</code>
+</pre>
+```
+
+---
+
+# Quotations
+
+## `<q>` Element
+
+Used for short inline quotations.
+
+### Example
+
+```html
+<q>Practice makes perfect.</q>
+```
+
+---
+
+## `<blockquote>` Element
+
+Used for long quotations or quoted sections.
+
+### Example
+
+```html
+<blockquote>
+Learning never stops.
+</blockquote>
+```
+
+---
+
+# Abbreviation Element
+
+## Definition
+
+The `<abbr>` element defines an abbreviation or acronym.
+
+### Example
+
+```html
+<abbr title="HyperText Markup Language">
+HTML
+</abbr>
+```
+
+The `title` attribute displays the full form when the user hovers over the abbreviation.
+
+---
+
+# Address Element
+
+## Definition
+
+The `<address>` element defines contact information for an author, organization, or website.
+
+### Example
+
+```html
+<address>
+Suraj Kumar<br>
+Bihar, India
+</address>
+```
+
+---
+
+# Time Element
+
+## Definition
+
+The `<time>` element represents dates and time values.
+
+### Example
+
+```html
+<time datetime="2026-07-13">
+13 July 2026
+</time>
+```
+
+The `datetime` attribute provides a machine-readable date and time format.
+
+---
+
+# Advantages
+
+* Displays reserved characters correctly.
+* Improves code formatting.
+* Preserves whitespace and indentation.
+* Makes technical documentation easier to read.
+* Improves accessibility and semantic meaning.
+* Helps browsers and search engines understand content.
+
+---
+
+# Common Elements Summary
+
+| Element        | Purpose                             |
+| -------------- | ----------------------------------- |
+| `<code>`       | Displays programming code           |
+| `<pre>`        | Preserves whitespace and formatting |
+| `<q>`          | Short quotation                     |
+| `<blockquote>` | Long quotation                      |
+| `<abbr>`       | Abbreviation or acronym             |
+| `<address>`    | Contact information                 |
+| `<time>`       | Date and time representation        |
+
+---
+
+# Interview Questions
+
+### 1. What are HTML entities?
+
+HTML entities are special character codes used to display reserved or special characters in HTML.
+
+### 2. Why are HTML entities used?
+
+They allow reserved characters such as `<`, `>`, and `&` to be displayed correctly without being interpreted as HTML code.
+
+### 3. What is the purpose of the `<code>` element?
+
+The `<code>` element is used to display programming code or computer-related text.
+
+### 4. What is the difference between `<pre>` and `<code>`?
+
+* `<pre>` preserves whitespace, indentation, and line breaks.
+* `<code>` identifies text as programming code.
+
+### 5. What is the purpose of the `<abbr>` element?
+
+The `<abbr>` element defines an abbreviation or acronym and can display its full form using the `title` attribute.
+
+---
+
+# Key Points
+
+* HTML entities display reserved and special characters.
+* `<code>` is used for programming code.
+* `<pre>` preserves the original formatting of text.
+* `<q>` is used for short quotations.
+* `<blockquote>` is used for long quotations.
+* `<abbr>` defines abbreviations.
+* `<address>` stores contact information.
+* `<time>` represents dates and time values.
+
+---
+
+# Summary
+
+HTML entities and utility elements improve the presentation and semantics of web content. They allow developers to display reserved characters, write formatted code snippets, preserve whitespace, define quotations, abbreviations, contact details, and represent date and time information in a meaningful way.
+
+
 
 🚀 This repository documents my HTML learning journey and practice.
